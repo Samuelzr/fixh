@@ -91,9 +91,6 @@
 
         <ul>
           <li class="pagina-atual"><a href="index.html">Ficha de Avaliação</a></li>
-        <li><a
-              href="https://docs.google.com/spreadsheets/d/1iYf_4JgkzIE_98C4sA4fKpT3B5OhZgFb-8G8Vch1DSE/edit?usp=sharing"
-              target="_blank" title="Planilha atualizada">Planilha</a></li>
         </ul>
 
       </nav>
@@ -1412,30 +1409,6 @@
 
     </form>
     </section>
-  <script type="text/javascript">
-    function buttonVerde() {
-
-
-      alert('Sucesso!\nEm alguns segundos a planilha será atualizada.')
-      document.getElementById("true-button").setAttribute("style", "background:green;")
-      document.getElementById("true-button").innerHTML = "Enviado"
-
-    }
-
-    const scriptURL = 'https://docs.google.com/spreadsheets/d/1Gy3qDFdxEzF-RUDfYJt7QfXP5EEhOOta8IIf2_cXLqY/edit?hl=pt-br#gid=0'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => window.setTimeout(buttonVerde(), 3000))
-        .catch(error => alert('Ocorreu um erro!\nVerifique a conexão com a internet.')
-    })
-  </script>
-
-
-
-
 </body>
 
 </html>
