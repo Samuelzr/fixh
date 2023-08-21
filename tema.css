@@ -412,27 +412,11 @@ h2.DATA {
 
     .titulo {margin-left:15px;}
 
-    article:nth-child(2){/*HISTÓRIA CLÍNICA*/
-        margin-top:420px;
+    article:first-child {
+        margin-top:300px;
         padding:0;
     }
-    article:nth-child(3){/*QUESTONÁRIO DE TEGNER E LYSHOLM*/
-        margin-top:600px;
-        margin-bottom:500px
-        
-    }
 
-    article:nth-child(4){/*HÁBITOS/ANTECEDENTES PESSOAIS*/
-        margin-bottom:500px
-    }
-    
-
-    article:nth-child(6){/*EXAME FÍSICO*/
-        margin-bottom:200px
-    }
-
-
-    
     #dadosPaciente{
         width: 100%;
         padding:15px 5px 5px 5px;
