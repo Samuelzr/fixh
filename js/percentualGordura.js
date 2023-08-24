@@ -40,7 +40,7 @@
             resultadoEscrito.val("")
             resultadoEscrito.addClass("faltaCampo")
         }
-
+ 
         else if (idade ==""){
             resultadoEscrito.attr('placeholder',"Campo 'Idade' não preenchido")
             resultadoEscrito.val("")
@@ -53,8 +53,8 @@
             if (sexo == "MASCULINO"){
                 console.log('entrou no if masculino')
 
-                //18-25
-                if (idade >= 18 && idade <=25){
+                //0-25
+                if (idade <= 25){
                     console.log('entrou no if idade 18')
                     if (pgMacho >= 4 && pgMacho <=6){
                         console.log('entrou no if excelente')
