@@ -29,38 +29,32 @@
           resultadoEscrito.val("")
           resultadoEscrito.removeClass("resultGray")
           resultadoEscrito.addClass("faltaCampo")
-        }
-        else if(idade ==""){
+        } else if (idade == ""){
           resultadoEscrito.attr('placeholder',"Campo 'Idade' não preenchido")
           resultadoEscrito.val("")
           resultadoEscrito.removeClass("resultGray")
           resultadoEscrito.addClass("faltaCampo")
-        }
-
-        
-        else{
+        } else {
           resultadoEscrito.removeClass("resultGray")
           resultadoEscrito.removeClass("faltaCampo")
       
             if (sexo == "MASCULINO"){
-            /*20 - 29*/
-            if (idade >=20 && idade <=29 && rcq<0.83){
+            /*0 - 29*/
+            if (idade >=0 && idade <=29 && rcq<0.83){
               var texto = 'BAIXO'            
               $("#rcq").val(texto); 
               resultadoNumero.val(rcq.toFixed(2))
               $('#rcq').css({ 'color': 'green', 'border-bottom': '5px solid green', 'font-size': '18px' })
-
-            
             }
         
-            else if (idade >=20 && idade <=29 && rcq>=0.83 && rcq<=0.88){
+            else if (idade >=0 && idade <=29 && rcq>=0.83 && rcq<=0.88){
               var texto = 'MODERADO'            
               $('#rcq').css({ 'color': '#5db1ff', 'border-bottom': '5px solid #5db1ff', 'font-size': '18px' })
               $("#rcq").val(texto); 
               resultadoNumero.val(rcq.toFixed(2))
               
             }
-            else if (idade >=20 && idade <=29 && rcq>0.88 && rcq<=0.94){
+            else if (idade >=0 && idade <=29 && rcq>0.88 && rcq<=0.94){
               var texto = 'ALTO'            
               $('#rcq').css({ 'color': '#ff4f4f', 'border-bottom': '5px solid #ff4f4f', 'font-size': '18px' })
               $("#rcq").val(texto); 
@@ -68,14 +62,14 @@
               
             }
         
-            else if (idade >=20 && idade <=29 && rcq>0.94){
+            else if (idade >=0 && idade <=29 && rcq>0.94){
               var texto = 'MUITO ALTO'
               $('#rcq').css({ 'color': '#ff4f4f', 'border-bottom': '5px solid #ff4f4f', 'font-size': '18px' })
           
               $("#rcq").val(texto); 
               resultadoNumero.val(rcq.toFixed(2))
               
-              }
+            }
         
             /*30 - 39*/ 
             
@@ -339,17 +333,6 @@
    
       })
     });
-  
-  
-  
-  
-  }
-  )
-  
-  
-  
+})
+
   /*fim do script para RELACAO CINTURA QUADRIL*/
-  
-  
-  
-  
