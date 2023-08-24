@@ -188,9 +188,17 @@
           </div>
           <br>
           <hr style="padding:5px;">
-          ENDEREÇO<span class="vermelho none"> *</span>
-          <input  name="ENDERECO" type="text" class="maiuscula" placeholder="Rua, Nº" maxlength="280">
-
+          <div class="form-row justify-content-center align-items-center">
+            <div class="col">
+              CEP<span class="vermelho none"> *</span>
+              <input  name="CEP" type="text" class="maiuscula" placeholder="SOMENTE NUMEROS" maxlength="8" pattern="[0-9]+$">
+            </div>
+            <br><br>
+            <div class="col">
+              ENDEREÇO<span class="vermelho none"> *</span>
+              <input  name="ENDERECO" type="text" class="maiuscula" placeholder="Rua, Nº" maxlength="280">
+            </div>
+          </div>
           <br><br>
           <div class="form-row justify-content-center align-items-center">
 
@@ -235,10 +243,6 @@
                   <option value="TO">TO</option>
                 </optgroup>
               </select></div>
-
-            <div class="col">CEP<span class="vermelho none"> *</span>
-              <input  name="CEP" type="text" class="maiuscula" placeholder="SOMENTE NUMEROS" maxlength="8"
-                pattern="[0-9]+$"></div>
           </div>
           <br>
           <hr style="padding:5px;">
